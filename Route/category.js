@@ -12,7 +12,7 @@ router.post("/", async (req, res) => {
 });
 
 router.get("/", async (req, res) => {
-    
+
     try {
         const stored = await Category.find()
         res.status(200).json(stored)
